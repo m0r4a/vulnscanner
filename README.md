@@ -22,9 +22,16 @@ This project is a Python-based vulnerability scanner that automates OpenVAS scan
 
 ### Required Python Packages
 
-```
+```bash
 pip install python-gvm twilio pyyaml
 ```
+
+or
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Installation
 
