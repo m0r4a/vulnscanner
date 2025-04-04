@@ -1,0 +1,13 @@
+# GVM Configuration
+gvm_socket_path: "/var/run/gvmd/gvmd.sock"  # OpenVAS/GVM socket path
+scan_config_id: "daba56c8-73ec-11df-a475-002264764cea"  # Full and fast scan
+scanner_id: "08b69003-5fc2-4037-a479-93b440211c73"  # OpenVAS Default Scanner
+port_list_id: "33d0cd82-57c6-11e1-8ed1-406186ea4fc5"  # All TCP and UDP
+severity_threshold: 7.0  # Critical vulnerability threshold (CVSS score)
+
+# Twilio Configuration for SMS Notifications
+twilio:
+  account_sid: "YOUR_TWILIO_ACCOUNT_SID"
+  auth_token: "YOUR_TWILIO_AUTH_TOKEN"
+  from_number: "YOUR_TWILIO_PHONE_NUMBER"
+  to_number: "RECIPIENT_PHONE_NUMBER"

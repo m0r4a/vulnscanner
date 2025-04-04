@@ -1,0 +1,8 @@
+# Run a daily scan at 2 AM
+0 2 * * * cd /path/to/vulnerability-scanner && python vuln_scanner.py --config /path/to/config.yml --target "Daily Scan" --hosts "example.com" --username "admin" --password "password" --output-dir "/var/reports/daily" >> /var/log/vuln-scan-daily.log 2>&1
+
+# Run a weekly comprehensive scan on Sundays at 3 AM
+0 3 * * 0 cd /path/to/vulnerability-scanner && python vuln_scanner.py --config /path/to/config.yml --target "Weekly Scan" --hosts "192.168.0.0/24" --username "admin" --password "password" --output-dir "/var/reports/weekly" >> /var/log/vuln-scan-weekly.log 2>&1
+
+# Run a monthly scan of external assets on the 1st of each month
+0 4 1 * * cd /path/to/vulnerability-scanner && python vuln_scanner.py --config /path/to/config.yml --target "Monthly External Scan" --hosts "external-assets.example.com" --username "admin" --password "password" --output-dir "/var/reports/monthly" >> /var/log/vuln-scan-monthly.log 2>&1
