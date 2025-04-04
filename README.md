@@ -22,16 +22,9 @@ This project is a Python-based vulnerability scanner that automates OpenVAS scan
 
 ### Required Python Packages
 
-```bash
-pip install python-gvm twilio pyyaml
-```
-
-or
-
-```bash
-pip install -r requirements.txt
-```
-
+- inspython-gvm
+- twilio
+- pyyaml
 
 ## Installation
 
@@ -54,17 +47,17 @@ sudo gvm-setup
 sudo gvm-start
 ```
 
-### 2. Install Python Dependencies
-
-```bash
-pip install python-gvm twilio pyyaml
-```
-
-### 3. Clone the Repository
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/vulnerability-scanner.git
 cd vulnerability-scanner
+```
+
+### 3. Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
 ### 4. Configure the Application
